@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(void) {
+
+	int number, temp;
+	int reverseNumber = 0;
+
+	printf("Enter your number : \n");
+	scanf("%i", &number);
+
+	while (number != 0) {
+		temp = number % 10;
+
+		reverseNumber *= 10;
+		reverseNumber += temp;
+
+		number /= 10;
+	}
+
+	printf("Reverse Number : %i\n", reverseNumber);
+
+}
